@@ -2,3 +2,5 @@ axelrod
 networkx
 jupyter
 pillow
+pandas
+seaborn
