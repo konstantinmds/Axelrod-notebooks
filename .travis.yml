@@ -1,0 +1,14 @@
+language: python
+python:
+  - 3.5
+  - 3.6
+before_install:
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+install:
+  - pip install axelrod
+  - pip install networkx
+  - pip install jupyter
+  - pip install pillow
+script:
+  - python nbtests.py
