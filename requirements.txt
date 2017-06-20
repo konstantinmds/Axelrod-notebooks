@@ -1,0 +1,4 @@
+axelrod
+networkx
+jupyter
+pillow
