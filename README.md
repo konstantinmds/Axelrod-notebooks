@@ -1,4 +1,5 @@
-A repository of Jupyter notebooks using the Axelrod project. Download, modify, and contribute your own notebooks!
+A repository of Jupyter notebooks using the Axelrod project.
+Download, modify, and contribute your own notebooks!
 
 Currently we have notebooks for the following:
 
@@ -9,3 +10,6 @@ Currently we have notebooks for the following:
 * [Spatial tournaments on a lattice](Spatia-Lattice-Structured-Example.ipynb)
 * [Spatial tournaments on a cycle](Spatia-Circle-Structured-Example.ipynb)
 * [Code to recreate the Axelrod logo](Logo.ipynb)
+
+The `./untested/` dir contains notebooks that are not tested by the
+`./nbtests.py` script.
