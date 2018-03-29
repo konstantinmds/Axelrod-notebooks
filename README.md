@@ -13,3 +13,6 @@ Currently we have notebooks for the following:
 
 The `./untested/` dir contains notebooks that are not tested by the
 `./nbtests.py` script.
+
+To view and run these notebooks without having to download or install anything,
+you can [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/Axelrod-Python/Axelrod-notebooks/master)
