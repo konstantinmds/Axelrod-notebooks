@@ -19,9 +19,11 @@ def retrieve_errors(nb_path):
     errors = []
     for cell in out.cells:
         if "outputs" in cell:
-            for output in cell["outputs"]:
-                if output.output_type == "error":
-                    errors.append(output.evalue)
+            errors.extend(
+                output.evalue
+                for output in cell["outputs"]
+                if output.output_type == "error"
+            )
     return errors
 
 if __name__ == "__main__":
@@ -30,6 +32,6 @@ if __name__ == "__main__":
     nbs = nb_dir.glob("*.ipynb")
 
     for path in nbs:
-        print("Testing: {}".format(path.stem))
+        print(f"Testing: {path.stem}")
         errors = retrieve_errors(path)
         assert errors == [], errors
